@@ -302,11 +302,11 @@ iframe {
   .resume {
     display: grid;
     grid-template-columns: 2fr 3fr;
-    grid-template-rows: 0.1fr 0.6fr 0.2fr;
+    grid-template-rows: 0.1fr 0.2fr 0.6fr;
     grid-template-areas:
       "photo skills"
-      "work education"
-      "about about";
+	  "about about"
+      "work education";
   }
 
   .resume-skills,
