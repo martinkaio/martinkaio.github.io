@@ -1,0 +1,319 @@
+@import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
+
+#gorgeous-contrast {
+  color: #61892f;
+  color: #86c232;
+  color: #222629;
+  color: #474b4f;
+  color: #6b6e70;
+  color: #dce2e6;
+}
+
+html {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+body {
+  font-family: "Nunito Sans", Arial, Helvetica, sans-serif;
+  font-size: 1.2em;
+}
+
+html,
+body {
+  height: 100%;
+  padding: 0;
+  margin: 0px 0px 0px 0px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Halant", "Courier New", Courier, monospace;
+}
+
+.gradient-bg {
+  background: linear-gradient(110deg, #222629, #222629, #305230, #547729);
+  color: #dce2e6;
+  width: 100%;
+  height: auto;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.white-border {
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+}
+
+.iframe-container {
+  position: relative;
+  overflow: hidden;
+  margin: auto;
+  margin-bottom: 3px;
+  max-width: 1280px;
+  max-height: 720px;
+  padding-top: 56.25%;
+}
+
+iframe {
+  position: absolute;
+  top: 0;
+  left: 10;
+  width: 100%;
+  height: 100%;
+  border: 0px solid black;
+  max-width: 1280px;
+  max-height: 720px;
+}
+
+@media (min-width: 1280px) {
+  .iframe-container {
+    padding-top: 720px;
+  }
+}
+
+.ftr-section a:hover {
+  text-decoration: none;
+}
+
+.flex-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-wrapper {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1 0 auto;
+  padding: 0 2px 0 2px;
+  margin-top: -20px;
+}
+
+.ftr-section {
+  overflow: hidden;
+  flex: none;
+  flex-shrink: 0;
+  padding-top: 2px;
+  padding-left: 0px;
+  background-color: rgba(10, 28, 46, 0.7);
+  margin-left: -1px;
+  height: 55px;
+  bottom: 0;
+  width: calc(93.7vw-52px);
+}
+
+.ftr-copyright {
+  position: absolute;
+}
+
+.ftr-section,
+.copyright {
+  color: #e5e5e5;
+}
+.ftr-copyright,
+.ftr-section a {
+  color: #f2ff49;
+  margin-left: 3px;
+  padding-right: 3px;
+  text-decoration: none;
+}
+.ftr-section,
+.ftr-section p {
+  font-size: 17px;
+}
+.ftr-copyright,
+.ftr-section p,
+.ftr-section span {
+  color: #d1caca;
+}
+.ftr-section,
+.ftr-copyright p,
+.ftr-copyright,
+.ftr-section a:hover {
+  color: #6c6d83;
+}
+
+.ftr-section .fa {
+  font-size: 20px;
+}
+
+.ftr-section .fa:hover {
+  -webkit-transition: all 0.15s linear;
+  transition: all 0.15s linear;
+  transform: scale(1.4);
+  padding-right: 2px;
+  padding-left: 1px;
+}
+
+.ftr-section .fa:hover,
+.ftr-section a:hover {
+  color: #f2ff49;
+}
+
+.resume {
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "photo"
+    "skills"
+    "about"
+    "work"
+    "education";
+  margin: 2px 0px 2px 0px;
+  grid-gap: 3px 3px;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 45px;
+}
+
+.resume-skills,
+.resume-education,
+.resume-about,
+.resume-work,
+.resume-photo {
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  padding: 2px 3px 2px 3px;
+  margin: 3px 0 3px 0;
+  border-radius: 5px;
+  background-color: rgba(28, 51, 75, 0.2);
+  min-width: 400px;
+}
+
+.resume-photo {
+  grid-area: photo;
+  border: 0px solid black;
+  padding: 2px 0px 2px 0px;
+  background-color: rgba(0, 0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.resume-photo img {
+  border-radius: 5px;
+  padding: 0px;
+  max-width: 800px;
+  width: 100%;
+  height: auto;
+  top: 10px;
+}
+
+.resume-photo h1 {
+  position: relative;
+  padding: 0;
+  margin: -1% 0 -1% 0;
+  font-size: 2.4em;
+  text-align: center;
+  top: 10px;
+}
+
+.resume-work {
+  grid-area: work;
+  text-align: left;
+}
+
+.resume-work ul,
+.resume-education ul {
+  margin-left: -35px;
+  line-height: 1em;
+}
+
+.resume-work p,
+.resume-education p {
+  margin: 1px 0 2px 0;
+  font-size: 0.9em;
+}
+
+.resume-work span,
+.resume-education span {
+  margin: 0px 20% 0px 0;
+  float: right;
+}
+
+.resume-work h2,
+.resume-education h2 {
+  margin: 1px 0 2px 0;
+}
+
+.resume-work h3,
+.resume-education h3 {
+  margin: 1px 0 2px 0;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.6);
+}
+.resume-work h4,
+.resume-education h4 {
+  margin: 1px 0 2px 0;
+}
+
+.resume-about {
+  grid-area: about;
+}
+.resume-education {
+  grid-area: education;
+}
+.resume-skills {
+  grid-area: skills;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: auto;
+  min-height: 400px;
+}
+
+.resume-skills ul {
+  margin: 0;
+  padding: 0 0 0 5px;
+}
+
+.resume-skills li {
+  list-style-type: none;
+}
+
+.resume-skills h3 {
+  margin: 0;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.6);
+}
+
+@media (max-width: 1000px) {
+  .resume-photo img {
+    max-width: 400px;
+  }
+
+  .resume {
+    align-items: center;
+  }
+}
+
+@media (min-width: 1000px) {
+  .resume {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: 0.1fr 0.6fr 0.2fr;
+    grid-template-areas:
+      "photo skills"
+      "work education"
+      "about about";
+  }
+
+  .resume-skills,
+  .resume-education,
+  .resume-about,
+  .resume-work,
+  .resume-photo {
+    padding: 0px 3px 0px 3px;
+  }
+}
